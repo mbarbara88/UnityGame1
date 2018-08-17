@@ -9,45 +9,45 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1788890602888208}
+  m_RootGameObject: {fileID: 1712072498746078}
   m_IsPrefabAsset: 1
---- !u!1 &1788890602888208
+--- !u!1 &1712072498746078
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4195544753823472}
-  - component: {fileID: 212909835664187526}
-  - component: {fileID: 60636104949695524}
-  - component: {fileID: 114916620818633944}
+  - component: {fileID: 4435337050329374}
+  - component: {fileID: 212396340576420938}
+  - component: {fileID: 61492506677077696}
+  - component: {fileID: 114078834983934120}
   m_Layer: 0
-  m_Name: Paddle
-  m_TagString: Untagged
+  m_Name: 3 Hit Breakable 1
+  m_TagString: Breakable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4195544753823472
+--- !u!4 &4435337050329374
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1788890602888208}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.17, y: 0.25, z: 0}
+  m_GameObject: {fileID: 1712072498746078}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.19, y: 3.92, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!60 &60636104949695524
-PolygonCollider2D:
+--- !u!61 &61492506677077696
+BoxCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1788890602888208}
+  m_GameObject: {fileID: 1712072498746078}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -58,42 +58,39 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.0317461, y: 0.50793654}
-    newSize: {x: 2.56, y: 0.64}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1.28, y: 1.28}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.52929187, y: 0.25396824}
-      - {x: -0.5205836, y: 0.2561453}
-      - {x: -0.79260135, y: 0.15613696}
-      - {x: -1.011519, y: 0.050429493}
-      - {x: -1.0158731, y: -0.25396827}
-      - {x: 1.0158731, y: -0.25396827}
-      - {x: 1.0071647, y: 0.05401185}
-      - {x: 0.8448522, y: 0.13197166}
---- !u!114 &114916620818633944
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 0.5}
+  m_EdgeRadius: 0
+--- !u!114 &114078834983934120
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1788890602888208}
+  m_GameObject: {fileID: 1712072498746078}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c37fc7aa9a70d54e858ed8e61b45ba0, type: 3}
+  m_Script: {fileID: 11500000, guid: 964b2b990bb061b46bac383ed1f5888f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minX: 1
-  maxX: 15
-  screenWidthInUnits: 16
---- !u!212 &212909835664187526
+  breakSound: {fileID: 8300000, guid: 2848f3f2432ecec428836e690903ac8b, type: 3}
+  blockSparklesVFX: {fileID: 100000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 2}
+  maxHits: 3
+  hitSprites:
+  - {fileID: 21300000, guid: 37419f2881ca2f845a5a78205ad5a208, type: 3}
+  - {fileID: 21300000, guid: 86a7ebef1f2e65d4d86f357cbc8b6ea2, type: 3}
+  timesHit: 0
+--- !u!212 &212396340576420938
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1788890602888208}
+  m_GameObject: {fileID: 1712072498746078}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -123,12 +120,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f3ed9bde6aa92ef49925e45c54c0a4a9, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 4c0d56fe86c60804498f1a6516cc2094, type: 3}
+  m_Color: {r: 0.9339623, g: 0.066082224, b: 0.14668204, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.56, y: 0.64}
+  m_Size: {x: 1.28, y: 1.28}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

@@ -38,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1473064506017528}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.99, y: 0.7, z: 0}
+  m_LocalPosition: {x: 4.2, y: 0.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -187,12 +187,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   paddle1: {fileID: 0}
   xPush: 2
-  yPush: 15
+  yPush: 20
   ballSounds:
   - {fileID: 8300000, guid: a5c5289d50cdeb243ac889e5253c45b2, type: 3}
   - {fileID: 8300000, guid: e046e0da06fe4fe4897d1e5ba03bbaf5, type: 3}
   - {fileID: 8300000, guid: 6fbff25909397e24e8bbec90479f919e, type: 3}
   - {fileID: 8300000, guid: b7e829ac0345a5540b48aba210245a90, type: 3}
+  randomFactor: 2
 --- !u!212 &212363911704132576
 SpriteRenderer:
   m_ObjectHideFlags: 1
