@@ -241,16 +241,6 @@ Prefab:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114905349664824226, guid: f2fb353e6c982f2409eab16fd188b0e3,
-        type: 2}
-      propertyPath: isAutoPlayEnabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114905349664824226, guid: f2fb353e6c982f2409eab16fd188b0e3,
-        type: 2}
-      propertyPath: gameSpeed
-      value: 0.6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f2fb353e6c982f2409eab16fd188b0e3, type: 2}
   m_IsPrefabAsset: 0
